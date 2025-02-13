@@ -45,7 +45,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 10px;
 }
 
 .banner-title {
@@ -59,7 +58,7 @@ body {
 }
 
 .banner-image {
-    width: clamp(200px, 45%, 600px);
+    width: clamp(100px, 35%, 4000px);
 }
 
 .about-container {
@@ -77,13 +76,12 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .cards {
     color: #fff;
     background-color: #da441c;
-    padding: 10px 30px;
+    padding: 5px 30px;
     width: 200px;
     text-align: start;
     border-radius: 10px;
@@ -108,8 +106,12 @@ li {
     padding-bottom: 10px;
 }
 
+.footer-list {
+    color: #333333;
+}
+
 .bold-text {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .address-list {
@@ -126,7 +128,7 @@ a {
 }
 
 .icons {
-    color: black;
+    color: #333333;
     transition: all 0.3s ease;
     cursor: pointer;
     font-size: 25px;
@@ -138,11 +140,13 @@ a {
 }
 
 .copyright-text {
+    color: #333333;
     text-align: center;
     font-size: 0.9rem;
 }
 
 .copyright-symbol {
+    color: #333333;
     position: relative;
     top: 1px;
 }
