@@ -1,0 +1,148 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #fffafa;
+    font-family: "Inter", serif;
+}
+
+.wraper {
+    margin: auto 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.logo {
+    height: 45px;
+}
+
+.send-mail-btn {
+    background-color: #da441c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.send-mail-btn:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.banner-title {
+    font-size: clamp(2rem, 4.3vw, 10rem);
+    padding: 0;
+}
+
+.banner-subtitle {
+    font-size: clamp(1rem, 1.6vw, 5rem);
+    margin-top: -30px;
+}
+
+.banner-image {
+    width: clamp(200px, 45%, 600px);
+}
+
+.about-container {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about-title {
+    font-size: clamp(1.5rem, 1.7vw, 4rem);
+    font-weight: 600;
+}
+
+.service-card-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cards {
+    color: #fff;
+    background-color: #da441c;
+    padding: 10px 30px;
+    width: 200px;
+    text-align: start;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 350;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-bottom: 10px;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.address-list {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-media-container {
+    margin-right: 20%;
+}
+
+.icons {
+    color: black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.icons:hover {
+    transform: scale(1.1);
+}
+
+.copyright-text {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.copyright-symbol {
+    position: relative;
+    top: 1px;
+}
