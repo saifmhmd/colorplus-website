@@ -53,12 +53,12 @@ body {
 }
 
 .banner-subtitle {
-    font-size: clamp(1rem, 1.6vw, 5rem);
+    font-size: clamp(0.9rem, 1.4vw, 5rem);
     margin-top: -30px;
 }
 
 .banner-image {
-    width: clamp(100px, 35%, 4000px);
+    width: clamp(100px, 35%, 400px);
 }
 
 .about-container {
@@ -67,7 +67,7 @@ body {
 }
 
 .about-title {
-    font-size: clamp(1.5rem, 1.7vw, 4rem);
+    font-size: clamp(1.2rem, 1.7vw, 4rem);
     font-weight: 600;
 }
 
@@ -86,7 +86,14 @@ body {
     text-align: start;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.card-title, .list-heading {
+    font-size: clamp(0.9rem, 1.3vw, 2rem);
+}
+
+.card-list, .footer-list {
+    font-size: clamp(0.8rem, 1.1vw, 1.4rem);
 }
 
 ul {
@@ -102,6 +109,7 @@ li {
 .address-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     /* align-items: center; */
     padding-bottom: 10px;
 }
@@ -119,12 +127,18 @@ li {
     padding: 0;
 }
 
+.check {
+    padding-right: 5px;
+}
+
 a {
     text-decoration: none;
 }
 
-.social-media-container {
-    margin-right: 20%;
+.mail-link-container {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
 }
 
 .icons {
@@ -135,8 +149,12 @@ a {
     padding-right: 5px;
 }
 
-.icons:hover {
-    transform: scale(1.1);
+.mail {
+    color: #333333;
+}
+
+.icons:hover, .mail:hover {
+    color: gray;
 }
 
 .copyright-text {
@@ -149,4 +167,77 @@ a {
     color: #333333;
     position: relative;
     top: 1px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 35px;
+    }
+    .banner-title {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 679px) {
+    .service-card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        height: 30px;
+    }
+    .send-mail-btn {
+        font-size: 0.7rem;
+    }
+    .banner-title {
+        padding-bottom: 10px;
+    }
+    .banner-image {
+        display: none;
+    }
+    .about-container {
+        justify-content: center;
+    }
+    .service-card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards {
+        padding: 5px 20px;
+    }
+    .address-container {
+        flex-direction: column;
+    }
+    .mail-link-container {
+        margin-top: -20px;
+    }
+    .mail {
+        font-size: 0.8rem;
+    }
+    .icons {
+        font-size: 1rem;
+    }
+    .copyright-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        height: 25px;
+    }
+    .send-mail-btn {
+        font-size: 0.65rem;
+    }
+    .banner-title {
+        font-size: 2rem;
+    }
+    .banner-subtitle {
+        font-size: 0.8rem;
+    }
 }
